@@ -100,8 +100,8 @@ var PeerUI = function(room, container_id) {
     hangupButton.style.display = 'none';
     fullscreenButton.style.display = 'none';
 
-    peerDiv.appendChild(videoDiv);
-    peerDiv.appendChild(controlDiv);
+    peerDiv.prepend(videoDiv);
+    peerDiv.prepend(controlDiv);
 
     this.localView = localView;
     this.remoteView = remoteView;
