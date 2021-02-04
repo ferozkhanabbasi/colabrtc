@@ -19,7 +19,7 @@ var PeerUI = function(room, container_id) {
           position: absolute;
           left: 38%;
           top: 60%;
-          z-index: 1;
+          z-index: 5;
           width: 50px;
           height: 50px;
           margin: -75px 0 0 -75px;
@@ -41,7 +41,7 @@ var PeerUI = function(room, container_id) {
     adapter.setAttribute('src','https://webrtc.github.io/adapter/adapter-latest.js');
     document.getElementsByTagName('head')[0].appendChild(adapter);
 
-    peerDiv.style.width = '70%';
+    peerDiv.style.width = '30%';
 
     // Define video elements.
     const videoDiv = document.createElement('div');
